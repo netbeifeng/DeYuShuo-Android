@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp72">72dp</dimen>
+    <dimen name="dp6">6dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="sp26">26sp</dimen>
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+</resources>

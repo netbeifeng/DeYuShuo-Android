@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhy.deyusgyo.com.deyushuo.ccbCricleMenu.LifeSpeakActivity"
+    android:background="@drawable/bg_main"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        android:id="@+id/p1">
+
+        <ImageView
+            android:layout_width="168dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/top_gear" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/bookspeak" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/back_book"
+            android:id="@+id/back_book"
+            android:onClick="backToMenu"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy_book"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="110dp"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+
+            android:layout_height="30dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="80dp"
+            android:onClick="pre_Page"
+            android:id="@+id/last_page_book"
+            android:background="@drawable/last_page_book" />
+
+        <ImageView
+            android:layout_width="78dp"
+
+            android:layout_height="78dp"
+            android:onClick="changeLevel_Book"
+            android:background="@drawable/under_big_gear_book" />
+
+        <ImageView
+            android:id="@+id/next_page_book"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="21dp"
+            android:onClick="next_Page"
+
+            android:background="@drawable/next_page_book" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:id="@+id/ug_book"
+
+            android:layout_marginBottom="-80dp"
+            android:background="@drawable/under_gear_book" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

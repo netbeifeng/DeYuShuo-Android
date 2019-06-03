@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.dys.deyushuo"
+android:versionCode="1"
+android:versionName="1.0.2" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+
+    android:allowBackup="false"
+        tools:replace="android:allowBackup"
+    android:icon="@drawable/deyushuo_logo"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme"
+        xmlns:tools="http://schemas.android.com/tools">
+    <activity
+        android:name="com.deyushuo.activity.MainActivity"
+        android:label="@string/app_name"
+        android:exported="true"
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name="com.deyushuo.activity.CollectionsCenter"
+        android:exported="false">
+    </activity>
+    <activity android:name="com.deyushuo.activity.CircleActivity"
+        android:exported="false">
+    </activity>
+        <activity android:name="com.deyushuo.activity.BookSpeakActivity"
+            android:exported="false">
+    </activity>
+    <activity android:name="com.deyushuo.activity.LifeSpeakActivity"
+        android:exported="false">
+    </activity>
+        <activity android:name="com.deyushuo.activity.LifeSpeakActivity_B2"
+            android:exported="false">
+        </activity>
+        <activity android:name="com.deyushuo.activity.LifeReaderActivtiy_B2"
+            android:exported="false">
+        </activity>
+
+    <activity android:name="com.deyushuo.activity.PeopleSpeakActivity"
+        android:exported="false">
+    </activity>
+    <activity android:name="com.deyushuo.activity.BookReaderActivity"
+        android:exported="false"></activity>
+    <activity android:name="com.deyushuo.activity.LifeReaderActivity"
+        android:exported="false"></activity>
+    <activity android:name="com.deyushuo.activity.PeopleReaderActivity"
+        android:exported="false"></activity>
+        <activity android:name="com.deyushuo.activity.SettingReaderActivity"
+            android:exported="false"></activity>
+        <activity android:name="com.deyushuo.activity.SettingActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name="com.deyushuo.activity.LifeVideoerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <!-- or android:screenOrientation="landscape"-->
+</application>
+
+</manifest>

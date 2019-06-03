@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_people">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/people_back_reader"
+            android:onClick="endActivtiy_P"/>
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/people_link"
+            android:onClick="toLink_P"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/collect_people"
+            android:onClick="collect_People"
+            />
+    </LinearLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp12"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/a_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="@dimen/sp26" />
+
+                <TextView
+                    android:id="@+id/a_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="220dp"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="@dimen/dp12"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quelle:zitate.net"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/translate"
+                    android:layout_marginTop="10dp"
+                    />
+                <!--
+                                <com.lws.allenglish.view.GetWordTextView
+                                    android:id="@+id/content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp12"
+                                    android:lineSpacingMultiplier="1.1"
+                                    android:textColor="@android:color/secondary_text_light"
+                                    android:textSize="18sp" />-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

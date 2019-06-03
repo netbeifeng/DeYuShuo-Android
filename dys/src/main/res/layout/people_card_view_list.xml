@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginBottom="20dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="#b4b3c1"
+    android:clickable="true"
+    android:paddingRight="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_margin="@dimen/dp6"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="北京发布空气污染红色警报，工厂停工、学校停课，雾霾弥漫好似“寂静岭”！"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:gravity="bottom"
+                android:text="爱语吧   2017-10-16" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/card_view_people"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:scaleType="fitXY"
+           />
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

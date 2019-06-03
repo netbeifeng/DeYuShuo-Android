@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhy.deyusgyo.com.deyushuo.ccbCricleMenu.PeopleSpeakActivity"
+    android:background="@drawable/bg_main"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        android:id="@+id/p1">
+
+        <ImageView
+            android:layout_width="168dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/top_gear_peopel" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/peopelspeak" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/back_peopel"
+            android:onClick="backToMenu"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="110dp"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+
+            android:layout_height="30dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="80dp"
+
+            android:background="@drawable/last_page_people"
+            android:onClick="refreshPage"/>
+
+        <ImageView
+            android:layout_width="78dp"
+
+            android:layout_height="78dp"
+
+            android:background="@drawable/under_big_gear_people" />
+
+        <ImageView
+            android:id="@+id/next_page_people"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="21dp"
+            android:onClick="refreshPage"
+            android:background="@drawable/next_page_people" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+
+            android:layout_marginBottom="-80dp"
+            android:background="@drawable/under_gear_people" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

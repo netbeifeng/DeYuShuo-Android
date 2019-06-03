@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_life">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/life_back_reader"
+            android:onClick="endActivtiy_L"/>
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/life_link"
+            android:onClick="toLink_L"/>
+
+        <ImageButton
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/loading"
+            android:id="@+id/audio_link_life"
+            android:onClick="play_Sound_life"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/collect_life"
+            android:onClick="collect_Life"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp12"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/life_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="@dimen/sp26" />
+
+                <TextView
+                    android:id="@+id/life_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/life_sub_titel"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/life_context"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Was bedeutet..."
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bedeutung"
+                    android:textSize="14dp"
+
+                    />
+                <!--
+                                <com.lws.allenglish.view.GetWordTextView
+                                    android:id="@+id/content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp12"
+                                    android:lineSpacingMultiplier="1.1"
+                                    android:textColor="@android:color/secondary_text_light"
+                                    android:textSize="18sp" />-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_life">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/life_back_reader"
+            android:onClick="endActivtiy_L"/>
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/life_link"
+            android:onClick="share"/>
+
+
+
+    </LinearLayout>
+
+    <cn.jzvd.JzvdStd
+        android:id="@+id/jc_video_player_standard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginLeft="19dp"/>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp12"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/life_title_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="@dimen/sp26" />
+
+                <TextView
+                    android:id="@+id/life_date_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:textSize="13sp"
+                    android:text="Qulle: 每日德语听力"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/life_sub_titel_v"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="17dp"
+                    android:text="Qulle: 每日德语听力"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

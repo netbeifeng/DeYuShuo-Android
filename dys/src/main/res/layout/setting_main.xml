@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg_main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/top_Setting">
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="-25dp"
+            android:background="@drawable/setting_gear_lt" />
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="30dp"
+            android:background="@drawable/setting"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="47dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/setting_back"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="47dp"
+            android:onClick="back"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="124dp"
+        android:id="@+id/setting_share"
+        android:onClick="onClick_share"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/setting_button"
+
+            android:layout_marginLeft="3dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/share" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="124dp"
+        android:id="@+id/setting_about"
+        android:onClick="onClick_about"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/setting_button"
+
+            android:layout_marginLeft="3dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/about" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="124dp"
+        android:id="@+id/setting_up"
+        android:onClick="onClick_checkUpdate"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/setting_button"
+
+            android:layout_marginLeft="3dp"/>
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/check_upgrade" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="124dp"
+        android:id="@+id/setting_contact"
+        android:onClick="onClick_toMail"
+    >
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/setting_button"
+
+        android:layout_marginLeft="3dp"/>
+
+    <ImageView
+        android:layout_width="105dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/contact_us" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="50dp"
+        android:onClick="onClick_from">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="3dp"
+
+            android:background="@drawable/setting_button" />
+
+        <ImageView
+            android:layout_width="138dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/data_from" />
+
+    </LinearLayout>
+
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="105dp"
+    android:background="@drawable/setting_gear_rb"
+    android:layout_marginTop="140dp"
+    android:layout_marginLeft="300dp"/>
+
+</LinearLayout>
