@@ -1,6 +1,7 @@
 # DeYuShuo_Android
-一个德语学习类 安卓App 使用爬虫爬取网络资源，因此无后端 
-Eine Android-App zum Deutschlernen verwendet Crawler, um Netzwerkressourcen zu crawlen, sodass es kein Backend gibt
+一个德语学习类的安卓App，使用爬虫爬取网络资源。
+
+用来学Android开发，以及Gradle构建的项目，学习项目。
 
 # 载入界面 Loading interface
 ![Image text](https://github.com/netbeifeng/DeYuShuo_Android/blob/master/screenshots/sh%20(10).png)
